@@ -5,6 +5,7 @@ import java.io.*;
 public class DealershipFileManager {
     private final String filePath = "src/main/resources/dealership.csv";
 
+
     public Dealership getDealership() {
         Dealership dealership = null;
 
