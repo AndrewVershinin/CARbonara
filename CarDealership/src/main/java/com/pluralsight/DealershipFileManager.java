@@ -3,7 +3,7 @@ package com.pluralsight;
 import java.io.*;
 
 public class DealershipFileManager {
-    private final String filePath = "src/main/resources/dealership.csv";
+    private final String filePath = "CarDealership/src/main/resources/dealership.csv";
 
 
     public Dealership getDealership() {
@@ -48,7 +48,7 @@ public class DealershipFileManager {
     public void saveDealership(Dealership dealership) {
 
         try {
-            BufferedWriter bw = new BufferedWriter(new FileWriter(filePath));
+            BufferedWriter bw = new BufferedWriter(new FileWriter(filePath, true));
 
             bw.write(dealership.getName() + "|" + dealership.getAddress() + "|" + dealership.getPhone());
             bw.newLine();
