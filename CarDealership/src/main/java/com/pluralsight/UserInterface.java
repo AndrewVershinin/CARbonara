@@ -279,7 +279,7 @@ public class UserInterface {
         dealership.removeVehicle(selectedVehicle);
         fileManager.saveDealership(dealership);
 
-        System.out.println("Contract created and vehicle removed from inventory.");
+        System.out.println("Contract created and vehicle successfully removed from inventory.");
     }
 }
 
