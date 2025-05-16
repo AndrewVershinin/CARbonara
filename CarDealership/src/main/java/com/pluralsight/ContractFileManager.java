@@ -17,7 +17,7 @@ public class ContractFileManager {
             if (contract instanceof SalesContract) {
                 SalesContract sc = (SalesContract) contract;
 
-                line = "SALE" +
+                line = "SALE|" +
                         sc.getDate() + "|" +
                         sc.getCustomerName() + "|" +
                         sc.getCustomerEmail() + "|" +
